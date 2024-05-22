@@ -59,3 +59,9 @@ transition: all ease-in-out 0.25s;
     width: 85%;
 transition: all ease-in-out 0.35s;
 }
+
+@media only screen and (max-width: 768px){
+    .nav-link::before{
+        content: none;
+    }
+}

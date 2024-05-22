@@ -65,3 +65,19 @@ color: white;
 .footer-dark{
   margin-top: -15px;
 }
+@media only screen and (max-width: 768px){
+  .subclass::before{
+    content: none;
+  }
+  .ftr-btn{
+    font-size: 14px;
+    padding: 0px;
+    margin-right: 10px;
+  }
+  #footer{
+    padding: 20px;
+  }
+  .sidelogo{
+    width: 120px;
+  }
+}

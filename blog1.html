@@ -49,7 +49,7 @@
     font-family: 'Heebo', sans-serif;
 }
 body{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     background-color: var(--white-);
 }
 .main-heading{
@@ -71,6 +71,50 @@ body{
 }
 .blog1{
     margin-left: 15%;
+}
+#topbnr{
+  display: none;
+}
+@media only screen and (max-width: 768px){
+  .blogimg{
+    padding: 0px;
+    height: 300px;
+  }
+  .main-heading{
+    margin-top: 30%;
+  }
+  #blog p{
+    font-size: 14px;
+  }
+  .blog1{
+    margin-left: 0px;
+  }
+  .blogimg{
+    display: none;
+  }
+ 
+.img1{
+  width:320px;
+  /* overflow: hidden; */
+}
+
+#topbnr {
+      display: block;
+      background: #212529 url(images/editingb.webp) no-repeat center;
+      background-size: cover;
+      background-attachment: fixed;
+      padding-block: 200px;
+      isolation: isolate;
+      background-blend-mode: soft-light;
+    }
+    .mainhead{
+      color: #f5f5f5;
+      font-size: 40px;
+      text-align: center;
+    }
+    .main-heading{
+      display: none;
+    }
 }
 </style>
 
@@ -115,8 +159,18 @@ body{
 
         <div class="container"><div class="row"><div class="col-md-12">
             <h1 class="main-heading" id="portrait">Our Blogs</h1>
-        </div></div>
-    </div>
+        </div>
+      
+      </div>
+    </div> 
+</div>
+<section id="topbnr">
+  <div class="topsec">
+    <h1 class="mainhead">OUR BLOGS</h1>
+
+  </div>
+</section>
+
     <div class="blog1">
         <div class="container">
             <div class="row">
