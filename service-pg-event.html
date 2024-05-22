@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Studioflix</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo&family=Jost:ital,wght@0,300;0,400;1,400&display=swap"
+      rel="stylesheet"
+    />
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="ftr.css">
+</head>
+
+<style>
+    :root{
+ --orange-:#f6623e;
+ --white-:#f5f5f5;
+--black-:#0a0b10;
+--grey-:#bababa;
+--font-family-:'Heebo', sans-serif;
+}
+*{
+    font-family: 'Heebo', sans-serif;
+}
+body{
+    background-color: var(--white-);
+
+}
+    .photos{
+        width: 250px;
+        height: auto;
+    }
+    .srv-all{
+        display: grid;
+        gap: 20px;
+        margin-left : 20%;
+        justify-content: center;
+        width: 60%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding-bottom: 30px;
+        border-bottom: 2px solid black;
+    }
+
+    .evt-heading{
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        padding: 120px 30px 30px 30px;
+    }
+    .main-para{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+.side-heading{
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-top: 30px;
+    text-align: center;
+}
+.side-heading::before{
+    position: absolute;
+    top: 63px;
+    content: "";
+    width: 160px;
+    height: 10px;
+    background-color: var(--orange-);
+}
+
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.side-txt{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 45px;
+    padding-top: 40px;
+
+}
+
+.prices{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding-bottom: 50px;
+    
+}
+
+.side-sec{
+    padding: 20px;
+}
+.srv-img{
+    padding: 0px 30px;
+position: relative;
+z-index: 99;
+}
+.srv-img::after{
+    position: absolute;
+    z-index: -1;
+    border-radius: 10px;
+    right: 60px;
+    top: 30px;
+    content: "";
+    width: 300px;
+    height: 380px;
+    background-color: #f6623e;
+}
+.service-image{
+    border-radius: 10px;
+    box-shadow: 0px 7px 15px;
+    width: 300px;
+    height: auto;
+}
+.pp{
+    font-style: italic;
+    margin-left: 37px;
+}
+.p-para{
+    width: 53%;
+    margin-left: 37px;
+}
+.side-head{
+    font-size: 20px;
+    padding-top: 5px;
+    font-weight: 600;
+}
+.side-head i{
+    color: var(--orange-);
+}
+.end-sec-heading{
+    font-size: 40px;
+    padding: 30px;
+    font-weight: 700;
+}
+
+.end-btn{
+    text-decoration: none;
+    background-color: black;
+    color: #bababa;
+    border-radius: 20px;
+    font-size: 16px;
+    padding:10px;
+    transition: all ease-in-out 0.5s;
+
+}
+.end-btn:hover{
+    color: white;
+}
+.div-end-btn{
+    padding: 100px;
+}
+@media only screen and (max-width: 768px){
+    .side-txt{
+        flex-direction: column-reverse;
+    }
+    .srv-img::after{
+        display: none;
+    }
+    .srv-img{
+        margin-bottom: 40px;
+    }
+    .prices{
+        grid-template-columns: 1fr;
+    }
+    .srv-all{
+            grid-template-columns: 1fr;
+            margin: auto;
+        }
+        .evt-heading{
+font-size: 24px;
+        }
+        .evt-para{
+            font-size: 14px;
+            padding: 0px 25px;
+        }
+        .service-image{
+            width: 240px;
+        }
+        .p-para{
+            width: auto;
+            font-size: 14px;
+        }
+        .side-txt{
+            padding-left: 0px;
+        }
+        .side-heading{
+            font-size: 20px;
+        }
+        .side-heading::before{
+            width: 100px;
+            top: 52px;
+        }
+        .side-head{
+            font-size: 18px;
+        }
+        .pp{
+            font-size: 14px;
+        }
+        .photos{
+            width: 230px;
+        }
+        .end-sec-heading{
+            font-size: 24px;
+        }
+        .end-sec-heading p{
+            font-size: 14px;
+        }
+        .end-para{
+            font-size: 14px;
+        }
+        .div-end-btn{
+            padding: 20px;
+        }
+        .end-btn{
+            font-size: 12px;
+            padding:7px ;
+        }
+        .side-sec{
+            padding: 0px;
+        }
+}
+</style>
+<body>
+    
+
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark absolute ">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/studioflix logo png.png" alt=""></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="equipment.html">Equipment</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="contact.html">Contact us</a>
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link active" href="about.html">About us</a>
+                </li>
+              </ul>
+  
+              <a class="nav-btn" href="contact.html">Book a Session</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+
+    <main>
+        <section id="Event">
+            <h1 class="evt-heading">Discover Our Range <br> of Photography Offerings</h1>
+            <div class="container"> <div class="row">
+                
+                <!-- <div class="text"> -->
+                    <div class="main-para">
+                    <div class="col-md-12">
+                        <div class="text">
+                               
+                                <p id="pricing" class="evt-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eligendi earum ex. Reprehenderit consequatur accusamus quis amet perspiciatis nemo. Culpa voluptatum nisi explicabo. Omnis a aspernatur quasi cupiditate amet ea.
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati nesciunt sint atque commodi distinctio cupiditate minima culpa repudiandae quam id fuga neque magnam, nobis eveniet recusandae? Praesentium, porro. Reprehenderit, eius?
+                                </p>
+                            </div>
+                            </div>
+                            </div>
+                            
+                </div>
+
+
+<div class="container"><div class="row">
+
+
+
+    <div class="col-md-12">
+        
+        <h2 class="side-heading" >CATEGORIES</h2>
+        <div class="side-txt">
+
+            <div class="prices">
+            <div class="side-sec">
+                <h5 class="side-head"><i class="fa-solid fa-video"></i>
+                    &nbsp; Outdoor Photography</h5>
+                <p class="p-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, voluptatem!</p>
+                <p class="pp">
+                    price:20000-26000</p>
+                </div>
+                <div class="side-sec">
+                    <h5 class="side-head"><i class="fa-solid fa-image"></i>
+                        <!-- <i class="fa-solid fa-pen"></i> -->
+                        &nbsp; Editing and Retouching</h5>
+                    <p class="p-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, voluptatem!</p>
+                    <p class="pp">
+                        price:15000-18000</p>
+                    </div>
+                    <div class="side-sec">
+                        <h5 class="side-head"><i class="fa-solid fa-user"></i>
+                            &nbsp; Portfolio</h5>
+                        <p class="p-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, voluptatem!</p>
+                        <p class="pp">
+                        price:10000-13000</p>
+                    </div>
+                    <div class="side-sec">
+                        <h5 class="side-head"><i class="fa-solid fa-tree"></i>
+                           &nbsp; Product Photography</h5>
+                        <p class="p-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, voluptatem!</p>
+                        <p class="pp">
+                            price:18000-22000</p>
+                        </div>
+         
+    <!-- <img src="images/do dariya.jpg" alt=""> -->
+</div>
+
+
+<div class="srv-img">
+    <img class="service-image" src="img-srv/service image.jpg"alt="">
+</div>
+
+
+</div>
+
+
+
+</div></div>
+
+
+
+            <div class="container-fluid">
+                <h2 class="evt-heading">Portfolio of our Photography <br> Services</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="srv-all">
+                            <a href="img-srv/evt.jpeg">
+                            <img src="img-srv/evt.jpeg" alt="" class="photos">
+                    </a>
+
+                        <img src="img-srv/WhatsApp Image 2023-06-20 at 9.47.31 PM.jpeg" alt="" class="photos">
+                        <img src="img-srv/evt2.jpeg" alt="" class="photos">
+                        <video class="photos" muted autoplay loop>
+                            <source src="img-srv/WhatsApp Video 2023-06-20 at 9.48.23 PM.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                          <img src="img-srv/WhatsApp Image 2023-06-20 at 9.47.32 PM (1).jpeg" alt="" class="photos" >
+                          <img src="img-srv/bday.avif" class="photos" alt="">
+                          <img src="img-srv/bday01.avif" class="photos" alt="">
+                          <img src="img-srv/bday2.avif" class="photos" alt="">
+                          <img src="img-srv/bday5.avif" class="photos" alt="">
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="end-sec-heading">Lets Work together</h1>
+<p class="end-para" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem velit id, itaque accusamus dolore quisquam ab consectetur rem explicabo, distinctio libero aut consequatur tempora nisi. Maxime rerum illo similique cumque.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="div-end-btn">
+                        <a class="end-btn" href="contact.html"><span>INQUIRY </span><i class="fa-solid fa-arrow-right"></i
+                            > </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <section id="footer">
+        
+        <div class="container">
+          <div class="row">
+            
+        
+            <div class="col-md-6">
+        
+              
+              <div class="subclass">
+                <h5 class="subbtn">Address :</h5>
+                <p class="subp">Lorem ipsum, dolor sit amet consectetur .</p>
+                <h5 class="subbtn">Email :</h5>
+                <p class="subp">albinakhan@gmail.com</p>
+                <h5 class="subbtn">Phone :</h5>
+                <p class="subp">+92 333-673-8902</p>
+              </div>
+        
+        
+        
+        
+            </div>
+        
+        
+            <div class="col-md-6">
+              <div class="footer-dark">
+                
+                
+                <a class="ftr-btn" href="index.html">Home</a>
+                <a class="ftr-btn" href="service-pg-event.html#pricing">Pricing</a>
+                <a class="ftr-btn"href="equipment.html">Our Gears</a>
+                <a class="ftr-btn"href="about.html">About</a>
+                
+                <img class="sidelogo" src="images/studioflix logo png.png" alt="">
+              </div>
+        
+        <div class="mission">
+          <h5 class="mhead">Our Mission</h5>
+          <p class="mp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam odit asperiores magnam eaque dicta soluta amet ex molestiae tenetur qui? Amet architecto </p>
+        </div>
+        
+              </div>
+                  </div>
+        
+        
+        
+        
+        
+        
+        
+          </div>
+        
+        
+        <div class="row">
+          <div class="col-md-12">
+        
+            <p class="copyright">© 2021 Company, Inc,all right reserved.</p>
+          </div>
+        </div>
+        
+        </div>
+        
+        
+        
+        </section>
+        
+        
+        </footer>
+        <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+
+<script>
+
+window.addEventListener('scroll', (e)=>{
+        const navBar=document.querySelector(".navbar");
+    window.scrollY > 50? navBar.classList.add('scroller') : navBar.classList.remove('scroller')
+})
+</script>
+</body>
+</html>

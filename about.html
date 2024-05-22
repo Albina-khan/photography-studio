@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studioflix</title>
+    
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="owl.carousel.min.css" />
+  <link rel="stylesheet" href="owl.theme.green.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo&family=Jost:ital,wght@0,300;0,400;1,400&display=swap"
+    rel="stylesheet"
+  />
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="ftr.css">
+</head>
+<style>
+    
+:root{
+ --orange-:#f6623e;
+ --white-:#f5f5f5;
+--black-:#0a0b10;
+--grey-:#bababa;
+--font-family-:'Heebo', sans-serif;
+}
+*{
+    font-family: 'Heebo', sans-serif;
+}
+body{
+    background-color: var(--white-);
+
+}
+.top-image img{
+  display: block;
+    height: auto;
+    width: 75vw;
+    padding-top: 3%;
+    margin: 5% auto;
+}
+.main-heading{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 90px;
+    padding: 0px 50px;
+}
+.team-heading{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 50px;
+}
+.team-para{
+    text-align: center;
+    padding: 0px 150px;
+}
+.team-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width: auto;
+    height: 95vh;
+}
+
+.end-sec-image{
+    margin-left: 50px;
+    border-radius: 10% ;
+    width: 500px;
+    height: auto;
+}
+.end-sec{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+}
+.end-text{
+    padding-top: 80px;
+    width: 150%;
+}
+@media only screen and (max-width: 768px){
+
+.info{
+    display: grid;
+    grid-template-columns: 1fr ;
+    column-gap: 80px;
+    padding: 0px 40px;
+}
+.team-para{
+  padding: 0px;
+  font-size: 14px;
+}
+.team-img{
+  height: 43vh;
+}
+.end-sec{
+  grid-template-columns: 1fr;
+}
+.end-text{
+  padding-top: 40px;
+    width: 90%;
+}
+.end-sec-image{
+  display: none;
+}
+.main-heading{
+  font-size: 24px;
+}
+.sub-para{
+  font-size: 14px;
+}
+.sub-heading{
+  font-size: 18px;
+}
+.team-heading{
+  font-size: 24px;
+}
+.std-heading{
+  font-size: 20px;
+}
+.std-p{
+  font-size: 14px;
+}
+.top-image img{
+  padding-top: 20%;
+}
+}
+</style>
+<body>
+  <header id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark absolute ">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/studioflix logo png.png" alt=""></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="equipment.html">Equipment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="service-pg-event.html">Services</a>
+            </li>
+          </ul>
+
+          <a class="nav-btn" href="contact.html">Book a Session</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <main>
+        <section id="About">
+<div class="container"><div class="row">
+    <div class="col-md-12">
+        
+        <div class="top-image">
+    <img src="img-srv/pexels-matheus-bertelli-2467506.jpg"alt="">
+</div>
+</div>
+
+<div class="col-md-12">
+        <h1 class="main-heading">Why Choose Us ?</h1>
+
+
+    <div class="info">
+    <div class="main-info">
+        <h5 class="sub-heading">Advanced Technology</h5>
+        <p class="sub-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab consectetur dolores deserunt! Possimus sed eius dolore ea. Eaque adipisci totam pariatur, hic ex esse possimus illum ducimus harum.</p>
+    </div>
+    <div class="main-info">
+        <h5 class="sub-heading">Attention to Detail</h5>
+        <p class="sub-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab consectetur dolores deserunt! Possimus sed eius dolore ea. Eaque adipisci totam pariatur, hic ex esse possimus illum ducimus harum.</p>
+    </div>
+    <div class="main-info">
+        <h5 class="sub-heading">Storytelling</h5>
+        <p class="sub-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab consectetur dolores deserunt! Possimus sed eius dolore ea. Eaque adipisci totam pariatur, hic ex esse possimus illum ducimus harum.</p>
+    </div>
+
+</div>
+</div>
+
+<div class="col-md-12">
+
+
+<div class="team-main">
+<h1 class="team-heading">Meet Our Creative Team</h1>
+
+<p class="team-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae omnis, soluta optio possimus debitis, voluptatum et, nesciunt dolor reprehenderit minus provident ipsam distinctio aperiam officia. Odit quibusdam dolores aliquam explicabo.</p>
+
+
+<img src="img-srv/our team.png" class="team-img" alt="">
+</div>
+
+</div>
+
+<div class="end-sec">
+<div class="col-md-6">
+
+    <img class="end-sec-image"src="img-srv/Our-studio.jpeg" alt=""></div>
+<div class="col-md-6">
+<div class="end-text">
+    <h1 class="std-heading">Our Studio</h1>
+    <p class="std-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad asperiores ipsum, expedita et corrupti sed debitis facilis temporibus, rerum recusandae ab neque dolorem explicabo delectus obcaecati eveniet inventore cumque molestiae!</p></div>
+</div>
+
+</div>
+
+
+</div></div>
+</section>
+</main>
+
+<footer>
+
+  <section id="footer">
+  
+  <div class="container">
+    <div class="row">
+      
+  
+      <div class="col-md-6">
+  
+        
+        <div class="subclass">
+          <h5 class="subbtn">Address :</h5>
+          <p class="subp">Lorem ipsum, dolor sit amet consectetur .</p>
+          <h5 class="subbtn">Email :</h5>
+          <p class="subp">albinakhan@gmail.com</p>
+          <h5 class="subbtn">Phone :</h5>
+          <p class="subp">+92 333-673-8902</p>
+        </div>
+  
+  
+  
+  
+      </div>
+  
+  
+      <div class="col-md-6">
+        <div class="footer-dark">
+          
+          
+          <a class="ftr-btn" href="index.html">Home</a>
+          <a class="ftr-btn" href="service-pg-event.html#pricing">Pricing</a>
+          <a class="ftr-btn"href="equipment.html">Our Gears</a>
+          <a class="ftr-btn"href="about.html">About</a>
+          
+          <img class="sidelogo" src="images/studioflix logo png.png" alt="">
+        </div>
+  
+  <div class="mission">
+    <h5 class="mhead">Our Mission</h5>
+    <p class="mp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam odit asperiores magnam eaque dicta soluta amet ex molestiae tenetur qui? Amet architecto </p>
+  </div>
+  
+        </div>
+            </div>
+  
+  
+  
+  
+  
+  
+  
+    </div>
+  
+  
+  <div class="row">
+    <div class="col-md-12">
+  
+      <p class="copyright">© 2021 Company, Inc,all right reserved.</p>
+    </div>
+  </div>
+  
+  </div>
+  
+  
+  
+  </section>
+  
+  
+  </footer>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"
+></script>
+
+<script> window.addEventListener('scroll', (e)=>{
+  const navBar=document.querySelector(".navbar");
+window.scrollY > 50? navBar.classList.add('scroller') : navBar.classList.remove('scroller')
+})</script>
+
+</body>
+</html>

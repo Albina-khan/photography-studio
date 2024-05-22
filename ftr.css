@@ -1,0 +1,67 @@
+
+    #footer{
+      margin-top: 5%;
+      background-color: black;
+      padding: 50px;
+    }
+.ftr-btn{
+  text-decoration: none;
+  color: rgb(191, 191, 191);
+  padding:  15px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+.ftr-btn:hover{
+color: white;
+}
+.copyright{
+  color: white;
+  font-size: 14px;
+  padding: 50px 10px 0px 0px;
+
+  text-align: center;
+}
+.subclass{
+  color: white ;
+  position: relative;
+}
+.btn{
+  margin-top: 160px;
+}
+.subclass::before{
+  content: "";
+  position: absolute;
+  width: 80vw;
+  height: 1px;
+  color: white;
+  bottom: -30px;
+  background-color: white;
+}
+.subbtn{
+  font-size: 16px;
+}
+.subp{
+  font-size: 14px;
+  color: rgb(191, 191, 191);
+}
+.mission{
+  padding: 23px;
+  /* margin-right: 20px; */
+}
+.mhead{
+  font-size: 16px;
+  color: white;
+  text-align: right;
+
+}
+.mp{
+  font-size: 14px;
+  color: rgb(191, 191, 191);
+  text-align: right;
+}
+.sidelogo{
+  width: auto;
+}
+.footer-dark{
+  margin-top: -15px;
+}
