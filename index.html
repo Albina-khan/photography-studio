@@ -82,6 +82,23 @@
     <main>
       <section id="topbnr">
         <h1 class="top_heading">STUDIOFLIX</h1>
+        <p id="demo" class="top_p"></p>
+        <script>
+          var i = 0;
+          var txt = "CAPTURE MEMORIES WITH US!"; /* The text */
+          var speed = 60; /* The speed/duration of the effect in milliseconds */
+
+          function typeWriter() {
+            if (i < txt.length) {
+              document.getElementById("demo").innerHTML += txt.charAt(i);
+              i++;
+              setTimeout(typeWriter, speed);
+            }
+          }
+          document.addEventListener("DOMContentLoaded", function () {
+            typeWriter();
+          });
+        </script>
         <div class="container-fluid">
           <div class="row">
             <div class="side-btn">
@@ -420,8 +437,8 @@
               <div class="footer-dark">
                 <a class="ftr-btn" href="index.html">Home </a>
                 <a class="ftr-btn" href="service-pg-event.html#pricing"
-                  >Pricing </a
-                >
+                  >Pricing
+                </a>
                 <a class="ftr-btn" href="equipment.html">Our Gears </a>
                 <a class="ftr-btn" href="about.html">About</a>
 
